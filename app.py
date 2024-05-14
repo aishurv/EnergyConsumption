@@ -33,8 +33,8 @@ def main():
     st.title('Power Consumption Prediction')
 
     # Create input fields for user input
-    temperature = st.number_input('Temperature', min_value=-0.0, max_value=50.0, value=20.0)
-    humidity = st.number_input('Humidity', min_value=0.0, max_value=100.0, value=50.0)
+    temperature = st.number_input('Temperature (In Degree Celsius)', min_value=-0.0, max_value=50.0, value=20.0)
+    humidity = st.number_input('Humidity (In Percentage In Air )', min_value=0.0, max_value=100.0, value=50.0)
     wind_speed = st.number_input('Wind Speed', min_value=0.0, max_value=50.0, value=10.0)
     general_diffuse_flows = st.number_input('General Diffuse Flows', min_value=0.0, max_value=1.0, value=0.5)
     diffuse_flows = st.number_input('Diffuse Flows', min_value=0.0, max_value=1.0, value=0.5)
